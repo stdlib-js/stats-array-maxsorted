@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-26)
+## Unreleased (2025-05-30)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`7453d19`](https://github.com/stdlib-js/stdlib/commit/7453d1986c3190121cec0a80bea425d814a51e62) - **bench:** fix value generation in `stats/array/*` [(#7117)](https://github.com/stdlib-js/stdlib/pull/7117) _(by Gururaj Gurram)_
 -   [`3d9063e`](https://github.com/stdlib-js/stdlib/commit/3d9063e1c739d5740cfaf15727669cba3c7c31b3) - **feat:** add `stats/array/maxsorted` [(#6884)](https://github.com/stdlib-js/stdlib/pull/6884) _(by Gururaj Gurram, Athan Reines)_
 
 </details>
