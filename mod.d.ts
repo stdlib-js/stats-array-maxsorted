@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,13 +16,32 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-var linspace = require( '@stdlib/array-base-linspace' );
-var maxsorted = require( './../lib' );
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var x = linspace( -50.0, 50.0, 10 );
-console.log( x );
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
 
-var v = maxsorted( x );
-console.log( v );
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
+
+/**
+* Computes the maximum value of a sorted array.
+*
+* @param x - input array
+* @returns maximum value
+*
+* @example
+* var x = [ 1.0, 2.0, 3.0 ];
+*
+* var v = maxsorted( x );
+* // returns 3.0
+*/
+declare function maxsorted( x: InputArray ): number;
+
+
+// EXPORTS //
+
+export = maxsorted;
